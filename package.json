@@ -1,7 +1,7 @@
 {
-  "name": "front-dog-shp",
+  "name": "front-Moto-Market",
   "version": "0.1.0",
-  "homepage": "https://marketdl.netlify.app",
+  "homepage": "https://elegant-cassata-382c2f.netlify.app",
   "private": true,
   "dependencies": {
     "@fdograph/rut-utilities": "^1.4.0",
