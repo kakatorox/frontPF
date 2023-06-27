@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c74dad6e.css",
+    "main.js": "/static/js/main.4adc23e2.js",
+    "static/media/dog-with-bone.jpg": "/static/media/dog-with-bone.3f9b23f68d8c3aee90c8.jpg",
+    "static/media/side-view-dog.jpg": "/static/media/side-view-dog.9c0c75a0188a0d81e1db.jpg",
+    "static/media/back-p.jpg": "/static/media/back-p.07183ce3917ac2495ca3.jpg",
+    "static/media/vector-fondo-animal-ilustracion-mascotas-lindas_53876-127698.png": "/static/media/vector-fondo-animal-ilustracion-mascotas-lindas_53876-127698.0ab9f3aa2bd97eb60a31.png",
+    "static/media/dog-with-binoculars.jpg": "/static/media/dog-with-binoculars.82fd958efadcef51283e.jpg",
+    "static/media/carrousel3.jpg": "/static/media/carrousel3.b6faf6c68d8712299ba5.jpg",
+    "static/media/carrousel2.png": "/static/media/carrousel2.0124a3962b8b6f6ad335.png",
+    "static/media/buyer.png": "/static/media/buyer.8cf0716c98b1d1c45d1b.png",
+    "static/media/650205.jpeg": "/static/media/650205.fec6e5c6d657640aed8c.jpeg",
+    "static/media/Avatar1.png": "/static/media/Avatar1.1bf476e43897ac425824.png",
+    "static/media/acana.png": "/static/media/acana.f8cf037cdf90709d8a56.png",
+    "static/media/Avatar2.webp": "/static/media/Avatar2.6fa609df5e19a41a6303.webp",
+    "static/media/carrousel4.jpg": "/static/media/carrousel4.ab7c6e440b47bd5715db.jpg",
+    "static/media/carrousel1.jpg": "/static/media/carrousel1.cf619111edf59aafda09.jpg",
+    "static/media/royal-canin.png": "/static/media/royal-canin.48225e8fa1ab9e71195f.png",
+    "static/media/dl-store.jpeg": "/static/media/dl-store.dc1d0a16eb5ca31c5360.jpeg",
+    "static/media/carrousel5.jpg": "/static/media/carrousel5.1ec50b6c9f4fe4a1ed28.jpg",
+    "static/media/logo-page.png": "/static/media/logo-page.af8a5400f1df5f218718.png",
+    "static/media/Wellness_CORE.webp": "/static/media/Wellness_CORE.b39be207163d1365a413.webp",
+    "static/media/seller.webp": "/static/media/seller.357faa280cb77ea5b49a.webp",
+    "static/media/proplan.png": "/static/media/proplan.24343905f9c3ecf63c12.png",
+    "static/media/hills.jpeg": "/static/media/hills.5ce991d2727a1e71ca50.jpeg",
+    "static/media/BRAVERY.webp": "/static/media/BRAVERY.b0380c0a67426a0089fd.webp",
+    "index.html": "/index.html",
+    "main.c74dad6e.css.map": "/static/css/main.c74dad6e.css.map",
+    "main.4adc23e2.js.map": "/static/js/main.4adc23e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c74dad6e.css",
+    "static/js/main.4adc23e2.js"
+  ]
+}
