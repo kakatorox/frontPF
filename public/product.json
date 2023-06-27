@@ -1,0 +1,53 @@
+[
+  {
+    "desc":"Comidita de Perrito",
+    "id": "P001",
+    "img": "https://falabella.scene7.com/is/image/Falabella/gsc_112906181_454704_1?wid=800&hei=800&qlt=70",
+    "ingredients": ["mozzarella", "tomates", "jamón", "orégano"],
+    "name": "Hills",
+    "price": 21900,
+    "stock": 200,
+    "seller": "petShopHouse",
+    "state": "active"
+  },
+  {
+    "desc":"Comidita de Perrito",
+    "id": "P002",
+    "img": "https://falabella.scene7.com/is/image/Falabella/gsc_112906181_454704_1?wid=800&hei=800&qlt=70",
+    "ingredients": ["mozzarella", "tomates", "jamón", "choricillo"],
+    "name": "Hills",
+    "price": 7250
+  },
+  {
+    "desc":"Comidita de Perrito",
+    "id": "P003",
+    "img": "https://falabella.scene7.com/is/image/Falabella/gsc_112906181_454704_1?wid=800&hei=800&qlt=70",
+    "ingredients": ["mozzarella", "tomates", "salame", "orégano"],
+    "name": "Hills",
+    "price": 5990
+  },
+  {
+    "desc":"Comidita de Perrito",
+    "id": "P004",
+    "img": "https://falabella.scene7.com/is/image/Falabella/gsc_112906181_454704_1?wid=800&hei=800&qlt=70",
+    "ingredients": ["mozzarella", "salame", "aceitunas", "champiñones"],
+    "name": "Hills",
+    "price": 9590
+  },
+  {
+    "desc":"Comidita de Perrito",
+    "id": "P005",
+    "img": "https://falabella.scene7.com/is/image/Falabella/gsc_112906181_454704_1?wid=800&hei=800&qlt=70",
+    "ingredients": ["mozzarella", "tomates cherry", "bacon", "orégano"],
+    "name": "Hills",
+    "price": 6450
+  },
+  {
+    "desc":"Comidita de Perrito",
+    "id": "P006",
+    "img": "https://falabella.scene7.com/is/image/Falabella/gsc_112906181_454704_1?wid=800&hei=800&qlt=70",
+    "ingredients": ["mozzarella", "pimientos", "pollo grillé", "orégano"],
+    "name": "Hills",
+    "price": 8500
+  }
+]

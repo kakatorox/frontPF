@@ -1,0 +1,64 @@
+.section-profile {
+    background: url("../img/side-view-dog.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+    align-items: center;
+}
+
+
+/* .py-5{
+    color: #22A39F;
+    padding: auto;
+    border-radius: 10px;
+    margin: auto;
+    opacity: 0.8;
+    justify-content: center;
+    display: flex;
+    
+    
+} */
+
+.shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    background: transparent;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+
+}
+
+.card-body h5,
+p {
+    color: #22A39F
+}
+
+.table {
+    background: transparent;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, .3);
+}
+
+.row {
+    background: transparent;
+}
+
+.col p {
+    color: #000;
+}
+
+.btn-colors {
+    background-color: #22A39F;
+    color: #f2f2f2;
+}

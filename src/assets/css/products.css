@@ -1,0 +1,15 @@
+.card-text{
+    font-size: small;
+    color:#222222;
+
+}
+.gallery{
+    margin: 20px;
+}
+.img-card{
+    height: 50%;
+    width: 50%;
+}
+.card-title{
+    color:#222222;
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+
+body{
+    background:#242422;
+    font-family: 'Shadows Into Light Two', cursive;    width: 100vw;
+
+}
+.active {
+    color: #f6e652 !important;
+    }
+.navbar-brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Nav-link{
+    padding-right: 3em;
+    color: #F3EFE0;
+}
+.fa-solid{
+    color: #F3EFE0;
+}
+.placeholderSearch{
+    border-radius: 10px;
+    width: 350px;
+    height:30px;
+    color: #242422;
+    margin: 2px;
+}
+.bg-negro{
+    background: #222222;
+}

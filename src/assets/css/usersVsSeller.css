@@ -1,0 +1,38 @@
+.log-back{
+    background: url("../img/dog-with-binoculars.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.st-login{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    opacity: 0.9;
+    border-radius: 10px;
+    border: 2px solid #F3EFE0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    padding: 0.1em;
+}
+.btn-sign-in{
+    background-color: #22A39F;
+    border-radius: 15px;
+    border-style: none;
+    padding: 0.5em;
+}
+.icon-img{
+    width: 300px;
+    height: 300px;
+}

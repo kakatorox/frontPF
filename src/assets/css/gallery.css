@@ -1,0 +1,153 @@
+.titleGallery {
+  color: #F3EFE0;
+  margin-top: 10px
+}
+
+body {
+  background: #222222;
+}
+
+.galeria {
+  display: grid;
+  gap: 10px;
+}
+
+x .grid-columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.galeria .foto {
+  cursor: pointer;
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  color: F3EFE0;
+  text-align: left;
+  text-shadow: 0px 0px 15px black;
+}
+
+.galeria .foto:hover {
+  box-shadow: 0px 0px 2px 1px black;
+}
+
+.galeria .foto svg {
+  align-self: flex-end;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+.img-cart {
+  width: 100px;
+  height: 100px;
+}
+
+.details {
+  background-color: #F3EFE0;
+  margin: 10px;
+}
+
+.carro {
+  margin: 70px;
+}
+.detalles{
+  width: 80%;
+}
+.card-carro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btn-colors{
+  background-color: #22A39F;
+  color: #f2f2f2;
+}
+.btn-color{
+  color: #f2f2f2;
+  background-color: #222222;
+}
+.gallery {
+  margin: 20px;
+}
+
+.card-img-top {
+  height: 50vh;
+
+}
+
+.pacman {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-list {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-list-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-list-filters select {
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.product-list-items {
+  list-style: none;
+  padding: 0;
+}
+
+.product-list-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doggie-div {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.doggie {
+  width: 10vw;
+  height: 10vh;
+  overflow: scroll;
+}
+
+.doggie-iframe {
+  width: 20vw;
+  height: 20vh;
+  pointer-events: none;
+}
+

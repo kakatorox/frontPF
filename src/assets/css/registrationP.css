@@ -1,0 +1,107 @@
+.back-user{
+    background: url(../img/dog-with-bone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    color: #F3EFE0;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    
+
+}
+
+.form-pub{
+    background:#d8f9ff;
+    border-radius: 10px;
+    height: 90%;
+    width: 40vw;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: fit-content;
+}
+.st-lo{
+    background-color: transparent;
+    opacity: .8;
+    display: grid;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #F3EFE0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    align-items: center;
+
+}
+.dir-col{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+input{
+    border-radius: 15px;
+}
+.col-es{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h3,h5{
+    color: #434242;
+    font-weight: bold;
+}
+.button-submit{
+    background-color: #22A39F;
+    color: #434242;
+    border-radius: 15px;
+    border: 2px solid #22A39F;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    opacity: 1;
+}
+
+.dflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+}
+textarea {
+    overflow: scroll;
+    resize: none;
+    width: 100%;
+}
+.rounded{
+    border-radius: 30px ;
+}
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    padding: 3em;
+}
