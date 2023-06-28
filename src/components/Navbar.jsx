@@ -3,7 +3,7 @@ import React from "react";
 import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../assets/css/navbar.css";
-import dl from "../assets/img/dl-store.jpeg";
+import dl from "../assets/img/logo.png";
 import contextCost from "../total_amount_context";
 import contextCategorias from "../categoria_context";
 import { useEffect } from "react";
