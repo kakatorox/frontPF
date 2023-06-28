@@ -106,8 +106,21 @@ function CrearPublicacion() {
         setId(payload.usuario.id_vendedor)
         formData.id_vendedor = payload.usuario.id_vendedor
     }
-
-
+    const { categorias, setCategorias } = useState();
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const response = await fetch(urlServer + "categoria/listado");
+                const data = await response.json();
+                setCategorias([...data]);
+                console.log(categorias);
+            } catch (error) {
+                console.error("Error fetching categories:", error);
+            }
+        }
+        fetchData();
+        // eslint-disable-next-line
+    }, [setCategorias]);
 
 
 
@@ -149,6 +162,17 @@ function CrearPublicacion() {
                                                 <li><button className="dropdown-item" onClick={handleCategoriaSelect} value="12">Chaquetas</button></li>
                                             </ul>
                                         </div>
+                                    </div>
+                                    <div className='d-flex flex-column'>
+                                        <ul className="dropdown-menu dropdown-menu-dark">
+                                            {categorias && categorias.length > 0 && categorias.map((categoria) => (
+                                                <li key={categoria.id_categoria}>
+                                                    <a className="dropdown-item" onClick={handleCategoriaSelect}>
+                                                        {categoria.nombre}
+                                                    </a>
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column gap-2 mt-2'>
