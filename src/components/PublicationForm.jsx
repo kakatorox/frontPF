@@ -166,7 +166,7 @@ function CrearPublicacion() {
                                 </div>
                                 <div className='d-flex flex-column gap-2 mt-2'>
                                     <input type="text" name="img" onChange={handleChange} placeholder=" Link de Imagen" required value={formData.img} />
-                                    <img width={200} src={imageUrl} alt="" />
+                                
                                 </div>
                             </div>
                             <div className='d-flex flex-column gap-3 dir-col mt-3'>
