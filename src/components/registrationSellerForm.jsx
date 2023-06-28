@@ -3,8 +3,8 @@ import "../assets/css/registration.css";
 import axios from 'axios'
 import alertify from 'alertifyjs';
 import { useNavigate } from "react-router-dom";
-//const urlServer = process.env.REACT_APP_BASE_URL; 
-const urlServer = 'https://backendpf-9070.onrender.com/';
+const urlServer = process.env.REACT_APP_BASE_URL;
+
 
 
 function RegistrationForm() {
@@ -25,18 +25,43 @@ function RegistrationForm() {
 
   const navigate = useNavigate();
 
-  async function postvendedor  (formData){
+  async function postvendedor(formData) {
     const endpoint = "vendedor/crear";
+
     try {
-        const consulta = await axios.post(urlServer + endpoint, formData);
-        console.log(consulta)
-        alertify.success("Usuario registrado con éxito");
-        navigate("/loginSeller");
-      } catch (error) {
-        alertify.error("Algo salió mal ...");
-        console.log(error);
+      const response = await fetch(urlServer + endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok.');
       }
-}
+
+      const data = await response.json();
+      console.log(data);
+      alertify.success("Usuario registrado con éxito");
+      navigate("/loginSeller");
+    } catch (error) {
+      console.error(error);
+      alertify.error("Algo salió mal...");
+    }
+  }
+  // async function postvendedor  (formData){
+  //   const endpoint = "vendedor/crear";
+  //   try {
+  //       const consulta = await axios.post(urlServer + endpoint, formData);
+  //       console.log(consulta)
+  //       alertify.success("Usuario registrado con éxito");
+  //       navigate("/loginSeller");
+  //     } catch (error) {
+  //       alertify.error("Algo salió mal ...");
+  //       console.log(error);
+  //     }
+  // }
 
 
   const handleSubmit = (event) => {
