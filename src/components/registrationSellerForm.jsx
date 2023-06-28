@@ -3,8 +3,8 @@ import "../assets/css/registration.css";
 import axios from 'axios'
 import alertify from 'alertifyjs';
 import { useNavigate } from "react-router-dom";
-const urlServer = process.env.REACT_APP_BASE_URL;
-
+//const urlServer = process.env.REACT_APP_BASE_URL; 
+const urlServer = 'https://backendpf-9070.onrender.com/';
 
 
 function RegistrationForm() {
