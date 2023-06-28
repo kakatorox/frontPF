@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 const urlServer = process.env.REACT_APP_BASE_URL;
 
+
 const Navbar = () => {
     const { cost } = useContext(contextCost);
     const navigate = useNavigate();
