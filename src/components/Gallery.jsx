@@ -98,8 +98,8 @@ export default function Gallery() {
 
     }
 
-    //<div className="pacman"><PacmanLoader color="#36d7b7" margin={0} ></PacmanLoader>.</div>
-    return isLoading ?<div className="doggieDiv mt-5"><iframe title='gif' className='doggie doggie-iframe' src="https://giphy.com/embed/KAdqfMqoM5turRW9xs"></iframe></div>
+   
+    return isLoading ? <div className="doggieDiv mt-5"><iframe title='gif' className='doggie doggie-iframe' src="https://giphy.com/gifs/thegoodfilms-thegoodfilms-motorcycle-the-master-foLjE3DzgQApy"></iframe></div>
         :
         <section id="gallery">
             <div className="container">
