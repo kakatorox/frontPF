@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c74dad6e.css",
-    "main.js": "/static/js/main.4adc23e2.js",
+    "main.js": "/static/js/main.ad866fcc.js",
     "static/media/dog-with-bone.jpg": "/static/media/dog-with-bone.3f9b23f68d8c3aee90c8.jpg",
     "static/media/side-view-dog.jpg": "/static/media/side-view-dog.9c0c75a0188a0d81e1db.jpg",
     "static/media/back-p.jpg": "/static/media/back-p.07183ce3917ac2495ca3.jpg",
@@ -27,10 +27,10 @@
     "static/media/BRAVERY.webp": "/static/media/BRAVERY.b0380c0a67426a0089fd.webp",
     "index.html": "/index.html",
     "main.c74dad6e.css.map": "/static/css/main.c74dad6e.css.map",
-    "main.4adc23e2.js.map": "/static/js/main.4adc23e2.js.map"
+    "main.ad866fcc.js.map": "/static/js/main.ad866fcc.js.map"
   },
   "entrypoints": [
     "static/css/main.c74dad6e.css",
-    "static/js/main.4adc23e2.js"
+    "static/js/main.ad866fcc.js"
   ]
 }
