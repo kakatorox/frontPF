@@ -163,16 +163,18 @@ function CrearPublicacion() {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className='d-flex flex-column'>
-                                        <ul className="dropdown-menu dropdown-menu-dark">
-                                            {categorias && categorias.length > 0 && categorias.map((categoria) => (
-                                                <li key={categoria.id_categoria}>
-                                                    <a className="dropdown-item" onClick={handleCategoriaSelect}>
-                                                        {categoria.nombre}
-                                                    </a>
-                                                </li>
-                                            ))}
-                                        </ul>
+                                    <div className="d-flex flex-column">
+                                        {categorias.length > 0 && (
+                                            <ul className="dropdown-menu dropdown-menu-dark">
+                                                {categorias.map((categoria) => (
+                                                    <li key={categoria.id_categoria}>
+                                                        <a className="dropdown-item" onClick={() => handleCategoriaSelect(categoria)}>
+                                                            {categoria.nombre}
+                                                        </a>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column gap-2 mt-2'>
