@@ -8,8 +8,8 @@ const urlServer = process.env.REACT_APP_BASE_URL;
 
 
 function CrearPublicacion() {
-    const [id, setId] = useState(0);
-    const [imageUrl, setImageUrl] = useState("");
+    //const [id, setId] = useState(0);
+    //const [imageUrl, setImageUrl] = useState("");
     const [formData, setFormData] = useState({
         nombre: '',
         descripcion: '',
@@ -40,6 +40,7 @@ function CrearPublicacion() {
 
     useEffect(() => {
         hasJWT()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const navigate = useNavigate();
@@ -75,14 +76,11 @@ function CrearPublicacion() {
     }
 
     const handleChange = (event) => {
-        let value = event.target.value;
-        let name = event.target.name
-        console.log(value, name);
+        //setImageUrl(event.target.value);
         setFormData({
             ...formData,
-            [name]: value.value
+            [event.target.name]: event.target.value
         });
-        setImageUrl(value);
     }
     const [selectedCategoria, setSelectedCategoria] = useState('Categoria');
 
@@ -103,30 +101,18 @@ function CrearPublicacion() {
         console.log(token)
         const base64Url = token.split('.')[1];
         const payload = JSON.parse(atob(base64Url));
-        setId(payload.usuario.id_vendedor)
+        //setId(payload.usuario.id_vendedor)
         formData.id_vendedor = payload.usuario.id_vendedor
     }
-    const { categorias, setCategorias } = useState();
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const response = await fetch(urlServer + "categoria/listado");
-                const data = await response.json();
-                setCategorias([...data]);
-                console.log(categorias);
-            } catch (error) {
-                console.error("Error fetching categories:", error);
-            }
-        }
-        fetchData();
-        // eslint-disable-next-line
-    }, [setCategorias]);
+
+
 
 
 
     useEffect(() => {
         leerToken()
 
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
@@ -165,8 +151,7 @@ function CrearPublicacion() {
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column gap-2 mt-2'>
-                                    <input type="text" name="img" onChange={handleChange} placeholder=" Link de Imagen" required value={formData.img} />
-                                
+                                    <input type="text" name="img" placeholder=" Imagen" required value={formData.img} onChange={handleChange} />
                                 </div>
                             </div>
                             <div className='d-flex flex-column gap-3 dir-col mt-3'>
