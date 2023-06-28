@@ -23,7 +23,7 @@ export default function UserVsSellerLogin(){
             <div className="st-login m-5 ">
                 <form className=" d-flex flex-column align-items-center p-4 gap-3">
                     <span className="d-flex">
-                        <h3>Iniciar Sesión</h3>
+                       <h3>Iniciar Sesión</h3>
                     </span>
                     <div className="d-flex flex-row align-items center gap-3">
                         <div className="d-flex flex-column" data-validate="Enter username or email">
