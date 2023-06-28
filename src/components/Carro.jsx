@@ -6,6 +6,7 @@ import contextCost from "../total_amount_context";
 import { useNavigate } from "react-router-dom";
 import alertify from 'alertifyjs';
 import axios from 'axios';
+const urlServer = process.env.REACT_APP_BASE_URL;
 
 export default function Carro() {
     const navigate = useNavigate();
@@ -47,7 +48,7 @@ export default function Carro() {
             id_usuario: id
         }
         console.log(request);
-        const response = await axios.post('https://backmarketdb.fly.dev/compras/crear', request);
+        const response = await axios.post(urlServer + 'compras/crear', request);
         console.log(response);
         if (response.status === 200) {
             alertify.success("Compra realizada con exito, generando Boleta de Compra");

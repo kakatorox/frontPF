@@ -8,7 +8,7 @@ import contextCost from "../total_amount_context";
 import contextCategorias from "../categoria_context";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+const urlServer = process.env.REACT_APP_BASE_URL;
 
 const Navbar = () => {
     const { cost } = useContext(contextCost);
@@ -31,7 +31,7 @@ const Navbar = () => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch("https://backendpf-9070.onrender.com/categoria/listado");
+                const response = await fetch(urlServer +"categoria/listado");
                 const data = await response.json();
                 setCategorias([...data]);
                 console.log(categorias);

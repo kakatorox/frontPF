@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Table } from "react-bootstrap";
 import '../assets/css/publicaciones.css';
 import ReactPaginate from 'react-paginate';
-
+const urlServer = process.env.REACT_APP_BASE_URL;
 export default function Publicaciones({ id }) {
     const [publicaciones, setPublicaciones] = useState([]);
     //const [compras, setCompras] = useState([]);
@@ -17,7 +17,7 @@ export default function Publicaciones({ id }) {
         async function fetchData() {
             if (userType === 'vendedor') {
                 try {
-                    const response = await fetch("https://backmarketdb.fly.dev/productos/mostrar/" + userId);
+                    const response = await fetch(urlServer + "productos/mostrar/" + userId);
                     const data = await response.json();
                     setPublicaciones([...data]);
                     console.log(data);
@@ -26,7 +26,7 @@ export default function Publicaciones({ id }) {
                 }
             } else if (userType === "usuario") {
                 try {
-                    const response = await fetch("https://backmarketdb.fly.dev/compras/listadobyUser/" + userId);
+                    const response = await fetch(urlServer + "compras/listadobyUser/" + userId);
                     const data = await response.json();
                     console.log(data);
                     setPublicaciones([...data]);

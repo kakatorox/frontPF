@@ -4,7 +4,7 @@ import { useEffect, useContext, useState } from "react";
 import contextProductos from "../producto_context";
 import cartContext from "../cart_context";
 import contextCost from "../total_amount_context";
-//import PacmanLoader from "react-spinners/PacmanLoader";
+const urlServer = process.env.REACT_APP_BASE_URL;
 
 export default function Gallery() {
     let location = useLocation();
@@ -20,7 +20,7 @@ export default function Gallery() {
 
     const makeRequests = () => {
         try {
-            fetch('https://backmarketdb.fly.dev/productos/listado').then((res) => res.json())
+            fetch(urlServer + 'productos/listado').then((res) => res.json())
                 .then((data) => {
                     productsResponse = data;
                     setProducts(productsResponse);
