@@ -3,7 +3,7 @@ import "../assets/css/registration.css";
 import axios from 'axios'
 import alertify from 'alertifyjs';
 import { useNavigate } from "react-router-dom";
-const urlServer = process.env.REACT_APP_BASE_URL;
+const urlServer = 'https://backendpf-9070.onrender.com/';
 
 
 
@@ -28,8 +28,9 @@ function RegistrationForm() {
   async function postvendedor  (formData){
     const endpoint = "vendedor/crear";
     try {
+        console.log(urlServer)
         const consulta = await axios.post(urlServer + endpoint, formData);
-      console.log(axios.post(urlServer + endpoint, formData))
+        
         console.log(consulta)
         alertify.success("Usuario registrado con éxito");
         navigate("/loginSeller");
@@ -37,8 +38,7 @@ function RegistrationForm() {
         alertify.error("Algo salió mal ...");
         console.log(error);
       }
-}
-
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
