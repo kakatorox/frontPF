@@ -31,7 +31,7 @@ const Navbar = () => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch("https://backmarketdb.fly.dev/categoria/listado");
+                const response = await fetch("https://backendpf-9070.onrender.com/categoria/listado");
                 const data = await response.json();
                 setCategorias([...data]);
                 console.log(categorias);
