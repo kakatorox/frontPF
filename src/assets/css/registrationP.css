@@ -26,9 +26,10 @@
     flex-direction: column;
     gap: 5px;
     height: fit-content;
+    
 }
 .st-lo{
-    background-color: transparent;
+    background-color: rgba(180,180,180,0.5);
     opacity: .8;
     display: grid;
     border-radius: 10px;
@@ -56,7 +57,7 @@ input{
     align-items: center;
 }
 h3,h5{
-    color: #434242;
+    color: #000;
     font-weight: bold;
 }
 .button-submit{
