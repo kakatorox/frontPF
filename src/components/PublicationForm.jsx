@@ -8,8 +8,8 @@ const urlServer = process.env.REACT_APP_BASE_URL;
 
 
 function CrearPublicacion() {
-    //const [id, setId] = useState(0);
-    //const [imageUrl, setImageUrl] = useState("");
+    const [id, setId] = useState(0);
+    const [imageUrl, setImageUrl] = useState("");
     const [formData, setFormData] = useState({
         nombre: '',
         descripcion: '',
@@ -40,7 +40,6 @@ function CrearPublicacion() {
 
     useEffect(() => {
         hasJWT()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const navigate = useNavigate();
@@ -76,11 +75,14 @@ function CrearPublicacion() {
     }
 
     const handleChange = (event) => {
-        //setImageUrl(event.target.value);
+        let value = event.target.value;
+        let name = event.target.name
+        console.log(value, name);
         setFormData({
             ...formData,
-            [event.target.name]: event.target.value
+            [name]: value.value
         });
+        setImageUrl(value);
     }
     const [selectedCategoria, setSelectedCategoria] = useState('Categoria');
 
@@ -101,7 +103,7 @@ function CrearPublicacion() {
         console.log(token)
         const base64Url = token.split('.')[1];
         const payload = JSON.parse(atob(base64Url));
-        //setId(payload.usuario.id_vendedor)
+        setId(payload.usuario.id_vendedor)
         formData.id_vendedor = payload.usuario.id_vendedor
     }
 
@@ -109,10 +111,9 @@ function CrearPublicacion() {
 
 
 
-    useEffect(() => {  
+    useEffect(() => {
         leerToken()
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
@@ -143,16 +144,16 @@ function CrearPublicacion() {
                                                 {selectedCategoria}
                                             </button>
                                             <ul className="dropdown-menu">
-                                                <li><button className="dropdown-item" onClick={handleCategoriaSelect} value="1">Higiene</button></li>
-                                                <li><button className="dropdown-item" onClick={handleCategoriaSelect} value="2">Alimento</button></li>
-                                                <li><button className="dropdown-item" onClick={handleCategoriaSelect} value="3">Descanso</button></li>
-                                                <li><button className="dropdown-item" onClick={handleCategoriaSelect} value="4">Entretencion</button></li>
+                                                <li><button className="dropdown-item" onClick={handleCategoriaSelect} value="7">Cascos</button></li>
+                                                <li><button className="dropdown-item" onClick={handleCategoriaSelect} value="9">Guantes</button></li>
+                                                <li><button className="dropdown-item" onClick={handleCategoriaSelect} value="12">Chaquetas</button></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column gap-2 mt-2'>
-                                    <input type="text" name="img" placeholder=" Imagen" required value={formData.img} onChange={handleChange} />
+                                    <input type="text" name="img" onChange={handleChange} placeholder=" Link de Imagen" required value={formData.img} />
+                                    <img width={200} src={imageUrl} alt="" />
                                 </div>
                             </div>
                             <div className='d-flex flex-column gap-3 dir-col mt-3'>
