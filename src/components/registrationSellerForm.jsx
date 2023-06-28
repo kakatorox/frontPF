@@ -29,6 +29,7 @@ function RegistrationForm() {
     const endpoint = "vendedor/crear";
     try {
         const consulta = await axios.post(urlServer + endpoint, formData);
+      console.log(axios.post(urlServer + endpoint, formData))
         console.log(consulta)
         alertify.success("Usuario registrado con éxito");
         navigate("/loginSeller");
