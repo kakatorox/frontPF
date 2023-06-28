@@ -26,9 +26,10 @@ function RegistrationForm() {
   const navigate = useNavigate();
 
   async function postvendedor(formData) {
-    const endpoint = "vendedor/crear";
+    const endpoint = "/vendedor/crear";
 
     try {
+
       const response = await fetch(urlServer + endpoint, {
         method: 'POST',
         headers: {
