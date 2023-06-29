@@ -99,7 +99,7 @@ export default function Gallery() {
     }
 
    
-    return isLoading ? <div className="doggieDiv mt-5"><iframe title='gif' className='doggie doggie-iframe' src="https://giphy.com/gifs/thegoodfilms-thegoodfilms-motorcycle-the-master-foLjE3DzgQApy"></iframe></div>
+    return isLoading ? <div className="doggieDiv mt-5"><iframe title='gif' className='doggie doggie-iframe' src="http://gif.toutimages.com/images/transports/motos/moto_083.gif"></iframe></div>
         :
         <section id="gallery">
             <div className="container">
