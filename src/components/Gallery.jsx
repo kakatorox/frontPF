@@ -4,6 +4,7 @@ import { useEffect, useContext, useState } from "react";
 import contextProductos from "../producto_context";
 import cartContext from "../cart_context";
 import contextCost from "../total_amount_context";
+import motorcycle from "../assets/img/motorcycle-1452762885.gif";
 const urlServer = process.env.REACT_APP_BASE_URL;
 
 export default function Gallery() {
@@ -99,7 +100,7 @@ export default function Gallery() {
     }
 
    
-    return isLoading ? <div className="doggieDiv mt-5"><iframe title='gif' className='doggie doggie-iframe' src="http://gif.toutimages.com/images/transports/motos/moto_083.gif"></iframe></div>
+    return isLoading ? <div className="doggieDiv mt-5"><iframe title='gif' className='doggie doggie-iframe' src={{ motorcycle }}></iframe></div>
         :
         <section id="gallery">
             <div className="container">
